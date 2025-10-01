@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>⋆｡˚ ✈︎ ✈️ ⋆Form Pemesanan Tiket Pesawat⋆｡˚ ✈︎ ✈️ ⋆</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>✈︎Tiket Pesawat✈︎</h1>
+
+  <form>
+    <fieldset>
+      <legend>Informasi Penumpang</legend>
+      Nama Lengkap: <input type="text" name="nama" placeholder="Masukkan Nama Lengkap"><br><br>
+      Nomor Identitas (KTP/Paspor): <input type="text" name="identitas" placeholder="Masukkan Nomor Identitas"><br><br>
+      Jenis Kelamin:
+      <input type="radio" name="gender" value="Laki-laki" checked> Laki-laki
+      <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+      Alamat Email: <input type="email" name="email" placeholder="Masukkan Email"><br><br>
+      Nomor Telepon: <input type="text" name="telepon" placeholder="Masukkan Nomor Telepon"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Informasi Penerbangan</legend>
+      Bandara Keberangkatan:
+      <select name="keberangkatan">
+        <option>Soekarno-Hatta (CGK)</option>
+        <option>Ngurah Rai (DPS)</option>
+        <option>Juanda (SUB)</option>
+        <option>Hasanuddin (UPG)</option>
+      </select><br><br>
+
+      Bandara Tujuan:
+      <select name="tujuan">
+        <option>Bandara Internasional Lombok (LIA)</option>
+        <option>Bandar Udara Internasional I Gusti Ngurah Rai</option>
+        <option>Bandar Udara Internasional Techo (KTI)</option>
+        <option>Hasanuddin (UPG)</option>
+      </select><br><br>
+
+      Tanggal Keberangkatan: <input type="date" name="berangkat"><br><br>
+      Tanggal Kepulangan (opsional): <input type="date" name="pulang"><br><br>
+      Jumlah Penumpang: <input type="number" name="jumlah" value="1" min="1"><br><br>
+      Kelas Penerbangan:
+      <select name="kelas">
+        <option>Ekonomi</option>
+        <option>Bisnis</option>
+        <option>VVIP</option>
+      </select><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Metode Pembayaran</legend>
+      <input type="radio" name="pembayaran" value="Kartu Kredit"> Kartu Kredit<br>
+      <input type="radio" name="pembayaran" value="Transfer Bank"> Transfer Bank<br>
+      <input type="radio" name="pembayaran" value="E-Wallet"> E-Wallet (GoPay, OVO, DANA, dll.)<br>
+    </fieldset>
+
+    <br>
+    <button type="submit">Pesan Tiket</button>
+  </form>
+</body>
+</html>
